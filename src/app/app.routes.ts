@@ -1,3 +1,6 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { Rastreio } from './pages/rastreio/rastreio';
+export const routes: Routes = [
+    { path: '', redirectTo: 'rastreio', pathMatch: 'full' },
+    { path: 'rastreio', component: Rastreio }
+];
